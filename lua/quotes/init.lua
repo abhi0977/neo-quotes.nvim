@@ -31,28 +31,6 @@ M.quotes = {
     "Measuring programming progress by lines of code is like measuring aircraft building progress by weight. - Bill Gates"
 }
 
-function addNewlineEveryFiveWords(inputStr)
-    local words = {}
-    -- Split the input string into words
-    for word in inputStr:gmatch("%S+") do
-        table.insert(words, word)
-    end
-    
-    -- Insert newlines after every 5 words
-    local result = {}
-    for i, word in ipairs(words) do
-        table.insert(result, word)
-        -- After every 5 words, insert a newline, except at the end of the string
-        if i % 5 == 0 and i ~= #words then
-            table.insert(result, '\n')
-        end
-    end
-    
-    -- Join all parts into a single string and return
-    return table.concat(result, " ")
-end
-
-
 function estimateReadingTime(inputString)
     -- Average reading speed in words per minute
     local wordsPerMinute = 200
@@ -74,7 +52,7 @@ end
 
 
 -- Function to split a string by space and batch the results
-function processString(inputString)
+function splitIntoLines(inputString)
     -- Split string by spaces into a list of words
     local words = {}
     for word in inputString:gmatch("%S+") do
@@ -107,7 +85,7 @@ end
 -- Function to display a random quote
 function M.display_quote()
     local quote = M.quotes[math.random(#M.quotes)]
-    require("notify")(processString(quote),"info",  {
+    require("notify")(splitIntoLines(quote),"info",  {
     title = "Today's NeoQuote",
     timeout = estimateReadingTime(quote),
     render = "simple",
