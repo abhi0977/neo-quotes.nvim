@@ -2,11 +2,33 @@ local M = {}
 
 -- Sample list of programming quotes
 M.quotes = {
+    -- Programming Craft
     "Talk is cheap. Show me the code. - Linus Torvalds",
-    "Programs must be written for people to read, and only incidentally for machines to execute. - Harold Abelson",
-    "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. - John Woods",
+    "Code never lies, comments sometimes do. - Ron Jeffries",
     "Any fool can write code that a computer can understand. Good programmers write code that humans can understand. - Martin Fowler",
-    "First, solve the problem. Then, write the code. - John Johnson"
+    "First, solve the problem. Then, write the code. - John Johnson",
+    "Code is like humor. When you have to explain it, it's bad. - Cory House",
+    "Make it work, make it right, make it fast. - Kent Beck",
+    "Clean code always looks like it was written by someone who cares. - Robert C. Martin",
+    
+    "Simplicity is prerequisite for reliability. - Edsger W. Dijkstra",
+    "Programming is learned by writing programs. - Brian Kernighan",
+    "The most disastrous thing that you can ever learn is your first programming language. - Alan Kay",
+    "Controlling complexity is the essence of computer programming. - Brian Kernighan",
+    "The function of good software is to make the complex appear to be simple. - Grady Booch",
+    
+    -- Programming Humor
+    "It's not a bug; it's an undocumented feature. - Anonymous",
+    "Programming is like sex: one mistake and you have to support it for the rest of your life. - Michael Sinz",
+    "There are only two kinds of languages: the ones people complain about and the ones nobody uses. - Bjarne Stroustrup",
+    "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. - John Woods",
+    
+    -- Programming Philosophy
+    "Programs must be written for people to read, and only incidentally for machines to execute. - Harold Abelson",
+    "Sometimes it pays to stay in bed on Monday rather than spending the rest of the week debugging Monday's code. - Dan Salomon",
+    "The best error message is the one that never shows up. - Thomas Fuchs",
+    "Given enough eyeballs, all bugs are shallow. - Linus Torvalds",
+    "Measuring programming progress by lines of code is like measuring aircraft building progress by weight. - Bill Gates"
 }
 
 function addNewlineEveryFiveWords(inputStr)
