@@ -16,8 +16,6 @@
 - **Customizable**: Easily customize the frequency and type of quotes displayed.
 - **Non-intrusive**: Designed to be lightweight and non-intrusive, providing inspiration without disrupting your workflow.
 
-Here's a simplified version of the installation guide:
-
 ---
 
 # Installation
