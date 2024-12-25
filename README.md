@@ -4,6 +4,12 @@
 
 `neo-quotes.nvim` is a Neovim plugin designed to display inspirational programming quotes directly within your editor. Enhance your coding experience with a touch of wisdom and motivation every time you open Neovim.
 
+
+![init](https://github.com/user-attachments/assets/3deb169e-6da7-4795-b398-ff9ecd353b31)
+
+![commad](https://github.com/user-attachments/assets/e077d54e-b83f-458a-9024-f511593bf68e)
+
+
 ## Features
 
 - **Inspirational Quotes**: Randomly displays an inspirational programming quote in your Neovim status line or as a pop-up.
