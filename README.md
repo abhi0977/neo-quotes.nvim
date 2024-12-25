@@ -10,16 +10,45 @@
 - **Customizable**: Easily customize the frequency and type of quotes displayed.
 - **Non-intrusive**: Designed to be lightweight and non-intrusive, providing inspiration without disrupting your workflow.
 
-## Installation
+Here's a simplified version of the installation guide:
 
-You can install `neo-quotes.nvim` using your favorite Neovim package manager.
+---
 
-### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
+# Installation
 
-Add the following to your Neovim configuration file:
+## Using **Lazy.nvim**
+
+Add the following to your Lazy.nvim plugin configuration:
+
+```lua
+{
+  'abhi0977/neo-quotes.nvim',
+  dependencies = { 'rcarriga/nvim-notify' }
+}
+```
+
+---
+
+## Using **Packer**
+
+Add the following to your Packer configuration:
 
 ```lua
 use {
-  'yourusername/neo-quotes.nvim',
+  'abhi0977/neo-quotes.nvim',
   requires = { 'rcarriga/nvim-notify' }
 }
+```
+
+---
+
+## Using **vim-plug**
+
+Add the following to your `init.vim` or `init.lua`:
+
+```vim
+Plug 'abhi0977/neo-quotes.nvim'
+Plug 'rcarriga/nvim-notify'
+```
+
+---
